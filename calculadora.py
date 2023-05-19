@@ -10,12 +10,15 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-print("Select operation.\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Exit")
+def potenciacion(x,y):
+    return x**y
+
+print("Select operation.\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Potenciacion\n6.Exit")
 
 while True:
-    choice = input("Enter choice(1/2/3/4/5): ")
+    choice = input("Enter choice(1/2/3/4/5/6): ")
 
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '2', '3', '4',"5"):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -30,8 +33,11 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+
+        elif choice == "5":
+            print(num1, "**", num2, "=", potenciacion(num1, num2))
         break
-    elif choice == '5':
+    elif choice == '6':
         print("Exit")
         break
     else:
