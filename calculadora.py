@@ -41,6 +41,6 @@ while True:
         print("Exit")
         break
     else:
-        print("Entrada no encontrada")
+        print("Entrada no encontrada.")
 
 
