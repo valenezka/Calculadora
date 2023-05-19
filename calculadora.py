@@ -13,7 +13,7 @@ def divide(x, y):
 def potenciacion(x,y):
     return x**y
 
-print("Select operation \n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Potenciacion\n6.Exit")
+print("Select operation. \n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Potenciacion\n6.Exit")
 
 while True:
     choice = input("Enter choice(1/2/3/4/5/6): ")
@@ -41,6 +41,6 @@ while True:
         print("Exit")
         break
     else:
-        print("Invalid Input")
+        print("Entrada no encontrada")
 
 
